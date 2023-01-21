@@ -1,10 +1,17 @@
-const MAX_POINTS: u32 = 100_000;
-
 fn main() {
-    let mut x = 5;
-    println!("The Value of x is {}", x);
-    x = 6;
+    let x = 5;
+
+    let x = x + 1;
+
+    {
+        let x = x * 2;
+        println!("The Value of x in the inner scope is {}", x);
+    }
+
     println!("The Value of x is {}", x);
 
-    print!("The Value of MAX_POINTS is {}", MAX_POINTS);
+    let spaces = "   ";
+    let spaces = spaces.len();
+
+    println!("There ara {} spaces", spaces)
 }
