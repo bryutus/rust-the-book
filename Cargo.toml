@@ -25,5 +25,9 @@ path = "src/variables/main.rs"
 name = "data_types"
 path = "src/data_types/main.rs"
 
+[[bin]]
+name = "functions"
+path = "src/functions/main.rs"
+
 [dependencies]
 rand = "0.8.4"
