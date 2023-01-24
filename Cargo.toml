@@ -29,5 +29,9 @@ path = "src/data_types/main.rs"
 name = "functions"
 path = "src/functions/main.rs"
 
+[[bin]]
+name = "comments"
+path = "src/comments/main.rs"
+
 [dependencies]
 rand = "0.8.4"
