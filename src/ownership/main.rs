@@ -21,6 +21,13 @@ fn main() {
 
     let _s3 = takes_and_gives_back(s2);
     // } // ここで、s3はスコープを抜け、ドロップされる。s2もスコープを抜けるが、ムーブされているので、何も起きない。s1もスコープを抜け、ドロップされる。
+
+    // Returning ownership of parameters
+    let c1 = String::from("hello");
+
+    let (c2, len) = calculate_length(c1);
+
+    println!("The length of '{}' is {}.", c2, len);
 }
 
 fn takes_ownership(some_string: String) {
@@ -46,4 +53,10 @@ fn gives_ownership() -> String {
 fn takes_and_gives_back(a_string: String) -> String {
     // a_stringがスコープに入る。
     a_string // a_stringが返され、呼び出し元関数にムーブされる
+}
+
+fn calculate_length(s: String) -> (String, usize) {
+    let length = s.len(); // len()メソッドは、Stringの長さを返します
+
+    (s, length)
 }
