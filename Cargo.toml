@@ -41,5 +41,9 @@ path = "src/control_flow/main.rs"
 name = "ownership"
 path = "src/ownership/main.rs"
 
+[[bin]]
+name = "references_borrowing"
+path = "src/references_borrowing/main.rs"
+
 [dependencies]
 rand = "0.8.4"
