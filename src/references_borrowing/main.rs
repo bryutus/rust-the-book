@@ -27,6 +27,10 @@ fn main() {
                  // let t3 = &mut c; // 大問題!
 
     println!("{} and {}", t1, t2);
+
+    // Dangling References
+    let reference_to_nothing = dangle();
+    println!("reference_to_nothing is '{}'", reference_to_nothing);
 }
 
 fn calculate_length(s: &String) -> usize {
@@ -39,3 +43,9 @@ fn change(some_string: &mut String) {
 
     println!("{}", some_string);
 }
+
+fn dangle() -> String {
+    let s = String::from("hello");
+
+    s // &sの場合、String sへの参照を返す
+} // ここで、sはスコープを抜け、ドロップされる。そのメモリは消される。
