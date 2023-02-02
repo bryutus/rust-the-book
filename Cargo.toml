@@ -45,5 +45,9 @@ path = "src/ownership/main.rs"
 name = "references_borrowing"
 path = "src/references_borrowing/main.rs"
 
+[[bin]]
+name = "slices"
+path = "src/slices/main.rs"
+
 [dependencies]
 rand = "0.8.4"
