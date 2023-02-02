@@ -38,6 +38,10 @@ fn main() {
     // 文字列リテラルは「それ自体がすでに文字列スライスなので」、スライス記法なしでも機能する
     let word = first_word(my_string_literal);
     println!("the first word is {}", word);
+
+    let a = [1, 2, 3, 4, 5];
+    let slice = &a[1..3];
+    println!("the slice is {:?}", slice);
 }
 
 fn first_word(s: &str) -> &str {
