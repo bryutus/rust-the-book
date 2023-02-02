@@ -23,9 +23,24 @@ fn main() {
     println!("{}", slice);
     let slice = &e[..];
     println!("{}", slice);
+
+    let my_string = String::from("hello, world");
+
+    // Stringのスライスを引数として渡す
+    let word = first_word(&my_string[..]);
+    println!("the first word is {}", word);
+
+    // 文字列リテラルのスライスを引数として渡す
+    let my_string_literal = "hello world";
+    let word = first_word(&my_string_literal[..]);
+    println!("the first word is {}", word);
+
+    // 文字列リテラルは「それ自体がすでに文字列スライスなので」、スライス記法なしでも機能する
+    let word = first_word(my_string_literal);
+    println!("the first word is {}", word);
 }
 
-fn first_word(s: &String) -> &str {
+fn first_word(s: &str) -> &str {
     let bytes = s.as_bytes();
 
     for (i, &item) in bytes.iter().enumerate() {
