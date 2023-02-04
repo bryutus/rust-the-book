@@ -49,5 +49,9 @@ path = "src/references_borrowing/main.rs"
 name = "slices"
 path = "src/slices/main.rs"
 
+[[bin]]
+name = "defining_structs"
+path = "src/defining_structs/main.rs"
+
 [dependencies]
 rand = "0.8.4"
