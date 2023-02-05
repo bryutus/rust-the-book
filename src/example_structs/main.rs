@@ -1,12 +1,20 @@
+struct Reactangle {
+    width: u32,
+    height: u32,
+}
+
 fn main() {
-    let rect = (30, 50);
+    let rect = Reactangle {
+        width: 30,
+        height: 50,
+    };
 
     println!(
         "The area of the reactangle is {} square pixels.",
-        area(rect)
+        area(&rect)
     );
 }
 
-fn area(dimensions: (u32, u32)) -> u32 {
-    dimensions.0 * dimensions.1
+fn area(reactangle: &Reactangle) -> u32 {
+    reactangle.height * reactangle.width
 }
