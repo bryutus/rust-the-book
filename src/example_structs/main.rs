@@ -1,3 +1,4 @@
+#[derive(Debug)]
 struct Reactangle {
     width: u32,
     height: u32,
@@ -8,6 +9,8 @@ fn main() {
         width: 30,
         height: 50,
     };
+
+    println!("rect is {:#?}", rect);
 
     println!(
         "The area of the reactangle is {} square pixels.",
