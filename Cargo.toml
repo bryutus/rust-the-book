@@ -57,5 +57,9 @@ path = "src/defining_structs/main.rs"
 name = "example_structs"
 path = "src/example_structs/main.rs"
 
+[[bin]]
+name = "method_syntax"
+path = "src/method_syntax/main.rs"
+
 [dependencies]
 rand = "0.8.4"
