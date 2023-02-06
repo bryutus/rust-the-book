@@ -61,5 +61,9 @@ path = "src/example_structs/main.rs"
 name = "method_syntax"
 path = "src/method_syntax/main.rs"
 
+[[bin]]
+name = "defining_an_enum"
+path = "src/defining_an_enum/main.rs"
+
 [dependencies]
 rand = "0.8.4"
