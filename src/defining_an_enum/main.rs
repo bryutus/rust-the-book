@@ -33,4 +33,11 @@ fn main() {
     println!("{:?}", movee);
     let color = Message::ChangeColor(0, 0, 0);
     println!("{:?}", color);
+
+    let some_number = Some(5);
+    println!("{}", some_number.is_some());
+    let some_string = Some("a string");
+    println!("{}", some_string.unwrap());
+    let absent_number: Option<i32> = None;
+    println!("{}", absent_number.is_none());
 }
