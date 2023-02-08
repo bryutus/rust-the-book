@@ -65,5 +65,9 @@ path = "src/method_syntax/main.rs"
 name = "defining_an_enum"
 path = "src/defining_an_enum/main.rs"
 
+[[bin]]
+name = "match"
+path = "src/match/main.rs"
+
 [dependencies]
 rand = "0.8.4"
