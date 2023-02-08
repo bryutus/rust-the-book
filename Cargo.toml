@@ -69,5 +69,9 @@ path = "src/defining_an_enum/main.rs"
 name = "match"
 path = "src/match/main.rs"
 
+[[bin]]
+name = "if_let"
+path = "src/if_let/main.rs"
+
 [dependencies]
 rand = "0.8.4"
