@@ -73,5 +73,9 @@ path = "src/match/main.rs"
 name = "if_let"
 path = "src/if_let/main.rs"
 
+[[bin]]
+name = "vectors"
+path = "src/vectors/main.rs"
+
 [dependencies]
 rand = "0.8.4"
