@@ -77,5 +77,9 @@ path = "src/if_let/main.rs"
 name = "vectors"
 path = "src/vectors/main.rs"
 
+[[bin]]
+name = "strings"
+path = "src/strings/main.rs"
+
 [dependencies]
 rand = "0.8.4"
