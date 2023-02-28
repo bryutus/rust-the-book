@@ -46,5 +46,43 @@ fn main() {
 
     let mut l = String::from("lo");
     l.push('l');
-    println!("{}", l)
+    println!("{}", l);
+
+    let s1 = String::from("Hello, ");
+    let s2 = String::from("World!");
+    let s3 = s1 + &s2;
+    println!("s3 is {}", s3);
+
+    let tic = String::from("tic");
+    let tac = String::from("tac");
+    let toe = String::from("toe");
+    let ttt = tic + "-" + &tac + "-" + &toe;
+    println!("{}", ttt);
+
+    let tic = String::from("tic");
+    let tac = String::from("tac");
+    let toe = String::from("toe");
+    let ttt = format!("{}-{}-{}", tic, tac, toe);
+    println!("{}", ttt);
+
+    // `String` cannot be indexed by `{integer}`
+    // let s1 = String::from("hello");
+    // let h = s1[0];
+
+    let len = String::from("Hola").len();
+    println!("{}", len);
+    let len = String::from("Здравствуйте").len();
+    println!("{}", len);
+
+    let hello = "Здравствуйте";
+    let s = &hello[0..4];
+    println!("{}", s);
+
+    for c in "नमस्ते".chars() {
+        println!("{}", c);
+    }
+
+    for b in "नमस्ते".bytes() {
+        println!("{}", b);
+    }
 }
