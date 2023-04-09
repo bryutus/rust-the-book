@@ -81,5 +81,9 @@ path = "src/vectors/main.rs"
 name = "strings"
 path = "src/strings/main.rs"
 
+[[bin]]
+name = "hash_maps"
+path = "src/hash_maps/main.rs"
+
 [dependencies]
 rand = "0.8.4"
